@@ -35,7 +35,7 @@ class Student:
 			print("{}:{}  ".format(subject, self.marks[subject]), end='')
 		print()
 		print("Average Marks: {}".format(self.average))
-
+ 
 
 #will hold roll numbers of students who scored maximum marks in the subject
 max_marks = {"English":"n/a", "Maths":"n/a", "History":"n/a", "Science":"n/a"}
