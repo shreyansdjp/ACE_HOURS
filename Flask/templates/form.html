@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ACE Form | DefinitelyNotAnmol</title>
+	<meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+</head>
+<body>
+
+
+	<div class="main-container">
+		<div class="box">
+			<form class="form" action="{{ url_for('thanks') }}" method="POST">
+				<span class="form-title">
+					Wassssssup!
+				</span>
+
+				<div class="input-wrap" data-validate="Name is required">
+					<span class="input-label">Your Name</span>
+					<input class="input" type="text" name="name" placeholder="Enter your name">
+				</div>
+
+				<div class="input-wrap" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="input-label">Email</span>
+					<input class="input" type="text" name="email" placeholder="Enter your email addess">
+				</div>
+
+				<div class="input-wrap" data-validate = "Message is required">
+					<span class="input-label">Message</span>
+					<textarea class="input" name="message" placeholder="Your message here..."></textarea>
+				</div>
+
+				<div class="button-wrap">
+					<div class="button-bg"></div>
+					<button class="form-button">
+						<span>Submit</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
